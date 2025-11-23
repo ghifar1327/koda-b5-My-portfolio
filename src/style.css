@@ -711,7 +711,7 @@ textarea {
     height: 50px;
     width: 50px;
     background-color: black;
-    mask-image: url(/src/asset/hamburger-black.svg);
+    mask-image: url("/src/asset/hamburger-black.svg");
     mask-size: 100%;
     mask-repeat: no-repeat;
   }
