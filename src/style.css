@@ -6,7 +6,7 @@
 }
 body {
   background-color: #f9faff;
-  width: 100vw;
+  width: 100%
 }
 nav {
   top: 20px;
@@ -18,6 +18,7 @@ nav {
   padding: 0 25px 0 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar > div:first-child {
   font-weight: 700;
@@ -33,12 +34,17 @@ ul {
   justify-content: space-between;
   gap: 15px;
 }
+div .svg-hamburger {
+  display: none;
+}
+/* .svg-hamburger{
+  display: none !important  ;
+} */
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 li {
-  color: white;
   z-index: 10;
   display: block;
   padding: 3px 12px;
@@ -49,13 +55,13 @@ li {
   border-radius: 20px;
 }
 .li-about li {
-  color: black !important;
+  color: black;
 }
 li:hover {
-  background-color: rgb(223, 73, 73);
+  transform: scale(1.2);
 }
 .svg-hamburger {
-  display: none !important;
+  display: none;
 }
 .main {
   display: flex;
@@ -93,7 +99,7 @@ li:hover {
   z-index: 1;
 }
 .main-left > div:first-child {
-  color: #b1350d;
+  color: rgb(223, 73, 73);
   font-size: 20px;
   font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
@@ -142,14 +148,14 @@ h1 {
   height: 524px;
 }
 .svg-custom {
-  background-color: #b1350d;
+  background-color: bisque;
   width: 724px;
   height: 629px;
   position: relative;
   top: 0;
-  left: 20px;
+  /* left: 20px;   */
   background-image: url("/src/asset/ghifar-1.png");
-  background-position: 100% 80%;
+  background-position: 100% 70%;
   background-repeat: no-repeat;
   background-size: 500px;
 
@@ -162,7 +168,7 @@ h1 {
 }
 
 .svg-custom-about {
-  background-color: #b1350d;
+  background-color: bisque;
 
   width: 524px;
   height: 524px;
@@ -181,8 +187,8 @@ h1 {
 }
 
 .btn-orange {
-  background-color: #b1350d;
-  border: 2px solid #b1350d;
+  background-color: bisque;
+  border: 2px solid bisque;
   border-radius: 8px;
   font-size: 18px;
   padding: 5px 10px 5px 10px;
@@ -222,7 +228,7 @@ article img {
   border-radius: 0 24px 24px 0;
 }
 .project2 img {
-  border-radius: 24px 0 0 24px !important;
+  border-radius: 24px 0 0 24px;
 }
 .project2 > :nth-child(1) {
   grid-column: 2/3;
@@ -261,7 +267,7 @@ form > div {
 form > div > h1 {
   text-align: center;
 }
-form > div > div:nth-child(5) {
+form > div > div:nth-child(6) {
   display: flex;
   justify-content: flex-end;
 }
@@ -276,7 +282,7 @@ input {
   border-radius: 8px;
 }
 textarea {
-  width: 100%; 
+  width: 100%;
   height: 160px;
   border: 1px solid #e8ecf4;
   border-radius: 8px;
@@ -311,7 +317,7 @@ textarea {
 .footer-svg {
   position: relative;
   bottom: 0;
-  background-color: #b1350d;
+  background-color: bisque;
   width: 100%;
   height: 50vh;
   min-height: 200px;
@@ -325,15 +331,17 @@ textarea {
   position: relative;
   z-index: 1;
 }
-hr{
+hr {
+  margin: 0 auto;
+  max-width: 110px;
   height: 5px;
-  background-color: #b1350d;
+  background-color: bisque;
 }
 /* ===================== resvonsive================= */
 
 @media (max-width: 1025px) {
   .svg-hamburger {
-    display: none !important;
+    display: none;
   }
   .main {
     display: flex;
@@ -369,7 +377,6 @@ hr{
     z-index: 1;
   }
   .main-left > div:first-child {
-    color: #b1350d;
     font-size: 20px;
   }
   .main-left > div:nth-child(2) {
@@ -395,14 +402,14 @@ hr{
     height: 424px;
   }
   .svg-custom {
-    background-color: #b1350d;
+    background-color: bisque;
     width: 524px;
     height: 459px;
     position: relative;
     top: -3px;
-    right: 5%;
+    /* right: 5%; */
     /* background-size: cover; */
-    background-position: 100% 80%;
+    background-position: 100% 70%;
     background-repeat: no-repeat;
     background-size: 70%;
 
@@ -411,7 +418,7 @@ hr{
     mask-position: center;
   }
   .svg-custom-about {
-    background-color: #b1350d;
+    background-color: bisque;
     width: 474px;
     height: 474px;
     background-size: cover;
@@ -422,8 +429,8 @@ hr{
     mask-position: center;
   }
   .btn-orange {
-    background-color: #b1350d;
-    border: 2px solid #b1350d;
+    background-color: bisque;
+    border: 2px solid bisque;
     border-radius: 8px;
     font-size: 14px;
     padding: 5px 10px 5px 10px;
@@ -447,12 +454,12 @@ hr{
     border-bottom-left-radius: 0;
   }
   .project2 img {
-    border-radius: 24px 0 0 24px !important;
+    border-radius: 24px 0 0 24px;
   }
 }
 @media (max-width: 769px) {
   .svg-hamburger {
-    display: none !important;
+    display: none;
   }
   ul {
     gap: 0px;
@@ -481,7 +488,7 @@ hr{
     z-index: 1;
   }
   .svg-custom-about {
-    background-color: #b1350d;
+    background-color: bisque;
     width: 374px;
     height: 374px;
     background-size: cover;
@@ -504,7 +511,6 @@ hr{
     z-index: 1;
   }
   .main-left > div:first-child {
-    color: #b1350d;
     font-size: 18px;
   }
   .main-left > div:nth-child(2) {
@@ -525,19 +531,9 @@ hr{
     color: #828282;
   }
   .svg-custom {
-    background-color: #b1350d;
+    background-color: bisque;
     width: 384px;
     height: 339px;
-    position: relative;
-    top: -3px;
-    right: 5%;
-    background-position: 100% 80%;
-    background-repeat: no-repeat;
-    background-size: 70%;
-
-    mask-size: 100%;
-    mask-repeat: no-repeat;
-    mask-position: center;
   }
 
   .btn-orange {
@@ -573,17 +569,18 @@ hr{
   .main {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
     gap: 40px;
     width: 100%;
   }
   .main-about {
     gap: 10px;
     flex-direction: column-reverse;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
   }
   .main-left-about {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 80%;
@@ -594,7 +591,7 @@ hr{
     /* z-index: 1; */
   }
   .svg-custom-about {
-    background-color: #b1350d;
+    background-color: bisque;
     width: 374px;
     height: 374px;
     background-size: cover;
@@ -626,13 +623,19 @@ hr{
     font-size: 16px;
   }
 
+  .main-right {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
   .svg-custom {
-    background-color: #b1350d;
-    width: 604px;
-    height: 528px;
+    background-color: bisque;
+    width: 384px;
+    height: 328px;
     position: relative;
     top: 0;
-    right: -100px;
+    right: 0;
+
     background-image: url("/src/asset/ghifar-1.png");
     /* background-size: cover; */
     background-position: 100% 80%;
@@ -662,35 +665,36 @@ hr{
     border-radius: 30px;
   }
 
-  article > div {
-    grid-template-columns: 1fr;
-  }
-
-  article img {
-    width: 100%;
-    height: auto;
-    border-radius: 30px 30px 0 0;
-  }
   .project2 {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr;
   }
 
   .project2 > :nth-child(1) {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
   }
 
   .project2 > :nth-child(2) {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
+  }
+
+  article > div {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   article img {
-    border-radius: 0 0 30px 30px !important;
+    width: 100%;
+    height: auto;
+    border-radius: 24px 24px 0 0;
+  }
+  article img {
+    border-radius: 24px 24px 0 0;
   }
   .project2 img {
-    border-radius: 0 0 30px 30px !important;
+    border-radius: 24px 24px 0 0;
   }
 
   .container-article {
@@ -706,10 +710,13 @@ hr{
     width: 90%;
   }
   .nav-right {
-    display: none !important;
+    display: none;
   }
-  .svg-hamburger {
-    display: block !important;
+  div .nav-right {
+    display: none;
+  }
+  div .svg-hamburger {
+    display: block;
     height: 50px;
     width: 50px;
     background-color: black;
@@ -720,15 +727,14 @@ hr{
 }
 
 @media (max-width: 430px) {
-
   nav {
     align-items: center;
   }
-  .navbar{
+  .navbar {
     padding: 0 10px 0 15px;
   }
   .nav-right {
-    display: none !important;
+    display: none;
   }
   .main-about {
     display: flex;
@@ -747,7 +753,6 @@ hr{
     padding: 0;
   }
 
-
   .main-left > div:first-child {
     font-size: 16px;
   }
@@ -762,7 +767,7 @@ hr{
   .svg-custom-about {
     width: 374px;
     height: 374px;
-    background-color: #b1350d;
+    background-color: bisque;
     background-position: 50% 20%;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -770,17 +775,16 @@ hr{
     mask-position: center;
   }
 
-  .svg-custom {
-    position: relative;
+  div .svg-custom {
     top: -10px;
-    right: -100px;
-    width: 404px;
-    height: 358px;
+    right: 0;
+    width: 354px;
+    height: 308px;
   }
 
   article {
     width: 100%;
-    max-width: 420px;
+    max-width: 400px;
     height: auto;
     border-radius: 30px;
   }
@@ -791,7 +795,7 @@ hr{
   }
 
   .container-article {
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     align-items: center;
   }
@@ -802,5 +806,11 @@ hr{
 
   form > div {
     width: 90%;
+  }
+  .main {
+    gap: 0;
+  }
+  .navbar div:first-child{
+    display: none;
   }
 }
