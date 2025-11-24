@@ -11,7 +11,7 @@ body {
 nav {
   top: 20px;
   position: absolute;
-  z-index: 999;
+  z-index: 2;
   width: 100%;
 }
 .navbar {
@@ -149,17 +149,16 @@ h1 {
   top: 0;
   left: 20px;
   background-image: url("/src/asset/ghifar-1.png");
-  /* background-size: cover; */
   background-position: 100% 80%;
   background-repeat: no-repeat;
   background-size: 500px;
 
   mask-image: url("/src/asset/yellow-bg.svg");
-  -webkit-mask-image: url("/src/asset/yellow-bg.svg");
-
-  /* mask-size: 90%; */
   mask-repeat: no-repeat;
   mask-position: center;
+  -webkit-mask-image: url("/src/asset/yellow-bg.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 
 .svg-custom-about {
@@ -277,7 +276,7 @@ input {
   border-radius: 8px;
 }
 textarea {
-  width: 100%;
+  width: 100%; 
   height: 160px;
   border: 1px solid #e8ecf4;
   border-radius: 8px;
@@ -326,7 +325,10 @@ textarea {
   position: relative;
   z-index: 1;
 }
-
+hr{
+  height: 5px;
+  background-color: #b1350d;
+}
 /* ===================== resvonsive================= */
 
 @media (max-width: 1025px) {
@@ -726,10 +728,8 @@ textarea {
     padding: 0 10px 0 15px;
   }
   .nav-right {
-
     display: none !important;
   }
-
   .main-about {
     display: flex;
     flex-direction: column-reverse;
