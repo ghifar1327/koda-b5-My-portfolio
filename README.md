@@ -9,4 +9,4 @@
 # Responsive 425px
 ![425px](/src/asset/425.png)
 
-[url versel disini](https://koda-b5-my-portfolio-e8cm.vercel.app/)
+[url versel disini](https://koda-b5-my-portfolio.vercel.app/)

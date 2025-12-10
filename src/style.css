@@ -747,15 +747,22 @@ hr {
     left: 40px;
   }
 #slideMenu {
+  /* opacity: 0; */
   font-size: 30px;
   position: absolute;
   top: 0;
-  right: -400px;
+  right: 0;
     width: 300px;
   height: 100vh;
-  transition: right 0.3s ease-in-out;
+  transform: scalex(0);
+  transform-origin: right center; 
+  transition: transform 0.3s ease-in-out;
   padding: 20px;
   box-sizing: border-box;
+}
+#checkbox:checked ~ #slideMenu {
+  /* opacity: 100%; */
+  transform: scale(1);
 }
   #slideMenu ul {
     position: relative;
@@ -766,9 +773,6 @@ hr {
     background-color: white;
     border: 1px solid black;
     display: block;
-  }
-  #checkbox:checked ~ #slideMenu {
-    right: 0;
   }
   input[name="checkbox"]:checked ~ #x {
     opacity: 100%;
